@@ -44,6 +44,8 @@ RUN rm -rf /gallery3
 
 RUN a2enmod rewrite
 RUN a2enmod expires
+RUN a2enmod ssl
+RUN a2ensite default-ssl
 ADD /apache-default /etc/apache2/sites-available/default
 
 ADD htaccess /var/www/.htaccess
