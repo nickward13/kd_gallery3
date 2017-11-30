@@ -14,7 +14,7 @@ $config['default'] = array(
     'params'	=> null,
   ),
   'character_set' => 'utf8',
-  'table_prefix'  => 'demo6',
+  'table_prefix'  => 'demo5',
   'object'        => true,
   'cache'         => false,
   'escape'        => true

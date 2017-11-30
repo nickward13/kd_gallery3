@@ -1,6 +1,6 @@
 FROM debian:wheezy
 
-ENV DEBIAN_FRONTEND noninteractive
+#ENV DEBIAN_FRONTEND noninteractive
 
 RUN \
   apt-get update && \
@@ -50,6 +50,7 @@ ADD /apache-default /etc/apache2/sites-available/default
 
 ADD htaccess /var/www/.htaccess
 ADD php.ini /etc/php5/apache2/php.ini
+ADD database.php /var/www/var/database.php
 
 RUN chown -R www-data:www-data /var/www/*
 
